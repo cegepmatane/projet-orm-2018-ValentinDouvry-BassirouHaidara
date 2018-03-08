@@ -10,20 +10,12 @@ import javafx.stage.Stage;
 public class VueExoplanetes extends Application
 {
 	protected StackPane racine;
- 	protected List<String> listeTest;
+ 	protected String stringTest;
 	
 	
 	public void start(Stage scenePrincipale)
 	{
-		this.listeTest = new ArrayList<String>();
-		listeTest.add("OUI");
-		listeTest.add("NON");
-		listeTest.add("Bonjour");
-		listeTest.add("Coucou");
-		listeTest.add("Salut");
-		listeTest.add("OUI");
-		listeTest.add("Yo");
-		listeTest.add("Hello");
+		stringTest = "Hello word";
 		
 		this.racine = new StackPane();
 		
