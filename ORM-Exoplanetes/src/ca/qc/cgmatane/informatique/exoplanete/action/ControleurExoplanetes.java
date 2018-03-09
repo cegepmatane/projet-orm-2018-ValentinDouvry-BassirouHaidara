@@ -20,9 +20,12 @@ public class ControleurExoplanetes {
 		daoExoplanetes = new DaoExoplanetes();
 		
 		listeExoplanete = daoExoplanetes.RecupererExoplanetes();
+		
 		for (Exoplanete exoplanete : listeExoplanete) {
-			System.out.println(exoplanete);
+			System.out.println(exoplanete.getPlanete());
 		}
+		
+		
 	}
 
 }

@@ -39,13 +39,15 @@ public class DaoExoplanetes
 		}
 				
 		@SuppressWarnings("deprecation")
-		Iterator visiteurExoplanete = session.createQuery("from Exoplanete").iterate();
+		Iterator visiteurExoplanete = session.createQuery("FROM Exoplanete").iterate();
 		
 		while(visiteurExoplanete.hasNext())
 		{
 			Exoplanete exoplanete = (Exoplanete) visiteurExoplanete.next();
+			//System.out.println(exoplanete.getPlanete());
 			listeExoplanete.add(exoplanete);
 		}
+		
 		session.close();
 		sessionControleur.close();
 		return listeExoplanete;
