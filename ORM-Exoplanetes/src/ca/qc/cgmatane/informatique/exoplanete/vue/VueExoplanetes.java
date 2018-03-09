@@ -1,7 +1,10 @@
 package ca.qc.cgmatane.informatique.exoplanete.vue;
 
 
+import java.util.List;
+
 import ca.qc.cgmatane.informatique.exoplanete.action.ControleurExoplanetes;
+import ca.qc.cgmatane.informatique.exoplanete.modele.Exoplanete;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
@@ -17,7 +20,7 @@ public class VueExoplanetes extends Application
 	
 	public void start(Stage scenePrincipale)
 	{
-		stringTest = "Hello word";
+		//stringTest = "Hello word";
 		
 		this.racine = new StackPane();
 		
@@ -30,6 +33,18 @@ public class VueExoplanetes extends Application
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
 		this.controleur = new ControleurExoplanetes(this);
+		
+	}
+	
+	public void afficherListeExoplanete(List<Exoplanete> listExoplanete)
+	{
+		String texte = "";
+		for (Exoplanete exoplanete : listExoplanete) {
+			texte+=exoplanete.getPlanete();
+			texte+= " - ";
+		}
+		this.texteExoplanetes.setWrappingWidth(500);
+		this.texteExoplanetes.setText(texte);
 		
 	}
 }
