@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.7
+- https://www.phpmyadmin.net
+-
+- Host: localhost:3306
+- Generation Time: Mar 08, 2018 at 08:12 PM
+- Server version: 5.7.21
+- PHP Version: 7.1.14
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="agencespatiale" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="exoplanetes">
+                CREATE TABLE `exoplanetes` (
+                  `planete` varchar(18) DEFAULT NULL,
+                  `etoile` varchar(16) DEFAULT NULL,
+                  `typeEtoile` varchar(5) DEFAULT NULL,
+                  `masse` varchar(19) DEFAULT NULL,
+                  `rayon` varchar(19) DEFAULT NULL,
+                  `flux` varchar(19) DEFAULT NULL,
+                  `temperature` varchar(18) DEFAULT NULL,
+                  `periode` varchar(19) DEFAULT NULL,
+                  `distance` varchar(19) DEFAULT NULL,
+                  `zone` varchar(25) DEFAULT NULL,
+                  `ist` decimal(3,2) DEFAULT NULL,
+                  `sph` decimal(3,2) DEFAULT NULL,
+                  `hzd` varchar(6) DEFAULT NULL,
+                  `hzc` varchar(5) DEFAULT NULL,
+                  `hza` varchar(6) DEFAULT NULL,
+                  `pClasse` varchar(22) DEFAULT NULL,
+                  `hClasse` varchar(14) DEFAULT NULL,
+                  `phi` decimal(3,2) DEFAULT NULL,
+                  `distance2` varchar(19) DEFAULT NULL,
+                  `status` varchar(18) DEFAULT NULL,
+                  `decouverte` varchar(13) DEFAULT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'agencespatiale'
+    -->
+    <database name="agencespatiale">
+        <!-- Table exoplanetes -->
+        <table name="exoplanetes">
+            <column name="planete">Earth</column>
+            <column name="etoile">Sun</column>
+            <column name="typeEtoile">G2V</column>
+            <column name="masse">1.00</column>
+            <column name="rayon">1.00</column>
+            <column name="flux">1.00</column>
+            <column name="temperature">255</column>
+            <column name="periode">365.24</column>
+            <column name="distance">NULL</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">1.00</column>
+            <column name="sph">0.72</column>
+            <column name="hzd">-0.50</column>
+            <column name="hzc">-0.31</column>
+            <column name="hza">-0.52</column>
+            <column name="pClasse">Terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">4.37</column>
+            <column name="distance2">0</column>
+            <column name="status">Pas une exoplanète</column>
+            <column name="decouverte">Préhistorique</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Proxima Centauri b</column>
+            <column name="etoile">Proxima Centauri</column>
+            <column name="typeEtoile">M6Ve</column>
+            <column name="masse">=1.3</column>
+            <column name="rayon">0.8 – 1.1 – 1.4</column>
+            <column name="flux">0.65</column>
+            <column name="temperature">234</column>
+            <column name="periode">11.186</column>
+            <column name="distance">4.22</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 667 Cc</column>
+            <column name="etoile">Gliese 667 C</column>
+            <column name="typeEtoile">M3V</column>
+            <column name="masse">=3.8</column>
+            <column name="rayon">1.1 – 1.5 – 2.0</column>
+            <column name="flux">0.88</column>
+            <column name="temperature">277</column>
+            <column name="periode">28.143 ± 0.029</column>
+            <column name="distance">23.62</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">0.84</column>
+            <column name="sph">0.64</column>
+            <column name="hzd">-0.62</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza"> +0.21</column>
+            <column name="pClasse">Terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">2017-06-23 00:00:00</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2011</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-442b</column>
+            <column name="etoile">Kepler-442</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">8.2 – 2.3 – 1.0</column>
+            <column name="rayon">1.34</column>
+            <column name="flux">0.70</column>
+            <column name="temperature">233</column>
+            <column name="periode">112.3053</column>
+            <column name="distance">1291.6</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">0.83</column>
+            <column name="sph">0.98</column>
+            <column name="hzd">-0.72</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza"> +0.28</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">1291.6</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2015</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-452b</column>
+            <column name="etoile">Kepler-452</column>
+            <column name="typeEtoile">G2V</column>
+            <column name="masse">19.8 – 4.7 – 1.9</column>
+            <column name="rayon">1.50, 1.63</column>
+            <column name="flux">2017-11-01 00:00:00</column>
+            <column name="temperature">265+15 -13</column>
+            <column name="periode">384.8</column>
+            <column name="distance">1402</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">0.83</column>
+            <column name="sph">0.93</column>
+            <column name="hzd">-0.61</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza">-0.30</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">1400</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2015</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Wolf 1061c</column>
+            <column name="etoile">Wolf 1061</column>
+            <column name="typeEtoile">M3V</column>
+            <column name="masse">= 4.3</column>
+            <column name="rayon">1.1 – 1.6 – 2.0</column>
+            <column name="flux">0.60</column>
+            <column name="temperature">223</column>
+            <column name="periode">2017-09-17 00:00:00</column>
+            <column name="distance">2017-08-13 00:00:00</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-1229b</column>
+            <column name="etoile">Kepler-1229</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">9.8 – 2.7 – 1.2</column>
+            <column name="rayon">2017-04-01 00:00:00</column>
+            <column name="flux">0.49</column>
+            <column name="temperature">213</column>
+            <column name="periode">86.8</column>
+            <column name="distance">769</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kapteyn b*</column>
+            <column name="etoile">Kapteyn</column>
+            <column name="typeEtoile">sdM1</column>
+            <column name="masse">= 4.8</column>
+            <column name="rayon">1.2 - 1.6 - 2.1</column>
+            <column name="flux">0.43</column>
+            <column name="temperature">205</column>
+            <column name="periode">48.6</column>
+            <column name="distance">13</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">0.67</column>
+            <column name="sph">0.00</column>
+            <column name="hzd"> +0.08</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza"> +0.57</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">psychroplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">2017-07-12 00:00:00</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-62f</column>
+            <column name="etoile">Kepler-62</column>
+            <column name="typeEtoile">K2V</column>
+            <column name="masse">10.2 - 2.8 - 1.2</column>
+            <column name="rayon">1.41</column>
+            <column name="flux">0.39</column>
+            <column name="temperature">244</column>
+            <column name="periode">267.291</column>
+            <column name="distance">1200</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">0.67</column>
+            <column name="sph">0.00</column>
+            <column name="hzd">0.45</column>
+            <column name="hzc">-0.16</column>
+            <column name="hza">0.19</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Psychroplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2013</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-186f</column>
+            <column name="etoile">Kepler-186</column>
+            <column name="typeEtoile">M1V</column>
+            <column name="masse">4.7 - 1.5 - 0.6</column>
+            <column name="rayon">1.17</column>
+            <column name="flux">0.29</column>
+            <column name="temperature">188</column>
+            <column name="periode">129.9459</column>
+            <column name="distance">561</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">0.64</column>
+            <column name="sph">0.00</column>
+            <column name="hzd">0.48</column>
+            <column name="hzc">-0.17</column>
+            <column name="hza">-0.26</column>
+            <column name="pClasse">Terrienne chaude</column>
+            <column name="hClasse">Psychroplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Trappist-1e</column>
+            <column name="etoile">Trappist-1</column>
+            <column name="typeEtoile">M8V</column>
+            <column name="masse">0.6</column>
+            <column name="rayon">0.9</column>
+            <column name="flux">0.67</column>
+            <column name="temperature">230</column>
+            <column name="periode">2017-01-06 00:00:00</column>
+            <column name="distance">39</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Trappist-1f</column>
+            <column name="etoile">Trappist-1</column>
+            <column name="typeEtoile">M8V</column>
+            <column name="masse">0.7</column>
+            <column name="rayon">1.0</column>
+            <column name="flux">0.38</column>
+            <column name="temperature">200</column>
+            <column name="periode">2017-02-09 00:00:00</column>
+            <column name="distance">39</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Trappist-1g</column>
+            <column name="etoile">Trappist-1</column>
+            <column name="typeEtoile">M8V</column>
+            <column name="masse">2017-03-01 00:00:00</column>
+            <column name="rayon">2017-01-01 00:00:00</column>
+            <column name="flux">0.26</column>
+            <column name="temperature">182</column>
+            <column name="periode">2017-04-12 00:00:00</column>
+            <column name="distance">39</column>
+            <column name="zone">conservative habitable</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">2017</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-438b</column>
+            <column name="etoile">Kepler-438</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">4.0 - 1.3 - 0.6</column>
+            <column name="rayon">2017-01-01 00:00:00</column>
+            <column name="flux">1.38</column>
+            <column name="temperature">276</column>
+            <column name="periode">35.2</column>
+            <column name="distance">473</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">0.88</column>
+            <column name="hzd">-0.93</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza">-0.73</column>
+            <column name="pClasse">Terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2015</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-296e</column>
+            <column name="etoile">Kepler-296</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">12.5 - 3.3 - 1.4</column>
+            <column name="rayon">2017-05-01 00:00:00</column>
+            <column name="flux">1.22</column>
+            <column name="temperature">337.0 ± 17.5</column>
+            <column name="periode">34.1</column>
+            <column name="distance">737</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-62e</column>
+            <column name="etoile">Kepler-62</column>
+            <column name="typeEtoile">K2V</column>
+            <column name="masse">18.7 - 4.5 - 1.9</column>
+            <column name="rayon">2017-06-01 00:00:00</column>
+            <column name="flux">2017-10-01 00:00:00</column>
+            <column name="temperature">270 ± 15</column>
+            <column name="periode">122.4</column>
+            <column name="distance">1200</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">0.96</column>
+            <column name="hzd">-0.70</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza">0.28</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2013</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 832 c</column>
+            <column name="etoile">Gliese 832</column>
+            <column name="typeEtoile">M2V</column>
+            <column name="masse">&gt;= 5.4</column>
+            <column name="rayon">1.2 - 1.7 - 2.2</column>
+            <column name="flux">1.00</column>
+            <column name="temperature">253; 233-280</column>
+            <column name="periode">35.7</column>
+            <column name="distance">16</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.81</column>
+            <column name="sph">0.96</column>
+            <column name="hzd">-0.72</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza">0.43</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">K2-3d</column>
+            <column name="etoile">K2-3</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">2017-01-11 00:00:00</column>
+            <column name="rayon">2017-05-01 00:00:00</column>
+            <column name="flux">1.46</column>
+            <column name="temperature">300</column>
+            <column name="periode">44.6</column>
+            <column name="distance">137</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-1544b</column>
+            <column name="etoile">Kepler-1544</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">31.7 - 6.6 - 2.6</column>
+            <column name="rayon">2017-08-01 00:00:00</column>
+            <column name="flux">0.90</column>
+            <column name="temperature">248</column>
+            <column name="periode">168.8</column>
+            <column name="distance">1138</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-283c</column>
+            <column name="etoile">Kepler-283</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">35.3 - 7.0 - 2.8</column>
+            <column name="rayon">2017-08-01 00:00:00</column>
+            <column name="flux">0.90</column>
+            <column name="temperature">248</column>
+            <column name="periode">92.7</column>
+            <column name="distance">1741</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.79</column>
+            <column name="sph">0.85</column>
+            <column name="hzd">-0.58</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza">0.69</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2011</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">tau ceti e</column>
+            <column name="etoile">tau ceti</column>
+            <column name="typeEtoile">G8.5V</column>
+            <column name="masse">= 4.3</column>
+            <column name="rayon">1.1 – 1.6 – 2.0</column>
+            <column name="flux">1.51</column>
+            <column name="temperature">282</column>
+            <column name="periode">168.1</column>
+            <column name="distance">12</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.78</column>
+            <column name="sph">0.00</column>
+            <column name="hzd">-0.92</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza">0.16</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Non-Confirmée</column>
+            <column name="decouverte">2012</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 180 c</column>
+            <column name="etoile">Gliese 180</column>
+            <column name="typeEtoile">M2V</column>
+            <column name="masse">= 6.4</column>
+            <column name="rayon">1.3 – 1.8 – 2.3</column>
+            <column name="flux">0.79</column>
+            <column name="temperature">239</column>
+            <column name="periode">2017-03-24 00:00:00</column>
+            <column name="distance">38</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.77</column>
+            <column name="sph">0.42</column>
+            <column name="hzd">-0.53</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza">0.64</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Non-Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-440b</column>
+            <column name="etoile">Kepler-440</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">41.2 – 7.7 – 3.1</column>
+            <column name="rayon">2017-09-01 00:00:00</column>
+            <column name="flux">1.43</column>
+            <column name="temperature">273</column>
+            <column name="periode">101.1</column>
+            <column name="distance">851</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.70</column>
+            <column name="sph">0.00</column>
+            <column name="hzd">0.01</column>
+            <column name="hzc">-0.15</column>
+            <column name="hza">0.38</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">psychroplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2015</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 180 b</column>
+            <column name="etoile">Gliese 180</column>
+            <column name="typeEtoile">M2V</column>
+            <column name="masse">= 8.3</column>
+            <column name="rayon">1.3 – 1.9 – 2.4</column>
+            <column name="flux">1.23</column>
+            <column name="temperature">268</column>
+            <column name="periode">2017-04-17 00:00:00</column>
+            <column name="distance">38</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.75</column>
+            <column name="sph">0.41</column>
+            <column name="hzd">-0.88</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza">0.74</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">Non-Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 180 c</column>
+            <column name="etoile">Gliese 180</column>
+            <column name="typeEtoile">M2V</column>
+            <column name="masse">= 6.4</column>
+            <column name="rayon">1.3 – 1.8 – 2.3</column>
+            <column name="flux">0.79</column>
+            <column name="temperature">239</column>
+            <column name="periode">2017-03-24 00:00:00</column>
+            <column name="distance">38</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.77</column>
+            <column name="sph">0.42</column>
+            <column name="hzd">-0.53</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza"> +0.64</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">39.5</column>
+            <column name="status">Non-Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-440b</column>
+            <column name="etoile">Kepler-440</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">41.2 – 7.7 – 3.1</column>
+            <column name="rayon">2017-09-01 00:00:00</column>
+            <column name="flux">1.43</column>
+            <column name="temperature">273</column>
+            <column name="periode">101.1</column>
+            <column name="distance">851</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 180 b</column>
+            <column name="etoile">Gliese 180</column>
+            <column name="typeEtoile">M2V</column>
+            <column name="masse">= 8.3</column>
+            <column name="rayon">1.3 – 1.9 – 2.4</column>
+            <column name="flux">1.23</column>
+            <column name="temperature">268</column>
+            <column name="periode">2017-04-17 00:00:00</column>
+            <column name="distance">38</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">HD 40307 g</column>
+            <column name="etoile">HD 40307</column>
+            <column name="typeEtoile">K2.5V</column>
+            <column name="masse">= 7.1</column>
+            <column name="rayon">1.3 – 1.8 – 2.3</column>
+            <column name="flux">0.68</column>
+            <column name="temperature">227</column>
+            <column name="periode">197.8</column>
+            <column name="distance">42</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.74</column>
+            <column name="sph">0.04</column>
+            <column name="hzd">-0.23</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza"> +0.77</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">psychroplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">41.7</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2012</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 163 c</column>
+            <column name="etoile">Gliese 163</column>
+            <column name="typeEtoile">M3.5V</column>
+            <column name="masse">= 7.3</column>
+            <column name="rayon">1.3 – 1.8 – 2.3</column>
+            <column name="flux">0.66</column>
+            <column name="temperature">230; 277</column>
+            <column name="periode">2017-06-25 00:00:00</column>
+            <column name="distance">49</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.75</column>
+            <column name="sph">0.02</column>
+            <column name="hzd">-0.96</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza"> +0.58</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">48.9</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2012</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">K2-18 b</column>
+            <column name="etoile">K2-18</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">? – 16.5 – 6.0</column>
+            <column name="rayon">2017-02-02 00:00:00</column>
+            <column name="flux">0.94</column>
+            <column name="temperature">272±15</column>
+            <column name="periode">32.9</column>
+            <column name="distance">111</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-61b</column>
+            <column name="etoile">Kepler-61</column>
+            <column name="typeEtoile">K7V</column>
+            <column name="masse">? – 13.8 – 5.2</column>
+            <column name="rayon">2017-02-02 00:00:00</column>
+            <column name="flux">1.27</column>
+            <column name="temperature">258, 273±13</column>
+            <column name="periode">59.9</column>
+            <column name="distance">1063</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.73</column>
+            <column name="sph">0.27</column>
+            <column name="hzd">-0.88</column>
+            <column name="hzc">-0.13</column>
+            <column name="hza"> +1.24</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">1062.8</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2013</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-443b</column>
+            <column name="etoile">Kepler-443</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">? – 19.5 – 7.0</column>
+            <column name="rayon">2017-03-02 00:00:00</column>
+            <column name="flux">0.89</column>
+            <column name="temperature">247</column>
+            <column name="periode">177.7</column>
+            <column name="distance">2540</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.73</column>
+            <column name="sph">0.91</column>
+            <column name="hzd">-0.49</column>
+            <column name="hzc">-0.13</column>
+            <column name="hza"> +1.44</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">2564-04-01 00:00:00</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2015</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-22b</column>
+            <column name="etoile">Kepler-22</column>
+            <column name="typeEtoile">G5V</column>
+            <column name="masse">? – 20.4 – 7.2</column>
+            <column name="rayon">2.04; 2.4</column>
+            <column name="flux">2017-11-01 00:00:00</column>
+            <column name="temperature">262</column>
+            <column name="periode">289.9</column>
+            <column name="distance">619</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.71</column>
+            <column name="sph">0.53</column>
+            <column name="hzd">-0.64</column>
+            <column name="hzc">-0.12</column>
+            <column name="hza"> +1.79</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">619.4</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2011</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 422 b*</column>
+            <column name="etoile">Gliese 422</column>
+            <column name="typeEtoile">M3.5V</column>
+            <column name="masse">= 9.9</column>
+            <column name="rayon">1.4 – 2.0 – 2.6</column>
+            <column name="flux">0.68</column>
+            <column name="temperature">231</column>
+            <column name="periode">2017-02-26 00:00:00</column>
+            <column name="distance">41</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.71</column>
+            <column name="sph">0.17</column>
+            <column name="hzd">-0.41</column>
+            <column name="hzc">-0.13</column>
+            <column name="hza"> +1.11</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">41.3</column>
+            <column name="status">Non-Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">K2-9b</column>
+            <column name="etoile">K2-9</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">? – 16.8 – 6.1</column>
+            <column name="rayon">2017-02-02 00:00:00</column>
+            <column name="flux">1.38</column>
+            <column name="temperature">284±14, 314+67 -64</column>
+            <column name="periode">2017-04-18 00:00:00</column>
+            <column name="distance">359</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 3293 c*</column>
+            <column name="etoile">Gliese 3293</column>
+            <column name="typeEtoile">M2.5V</column>
+            <column name="masse">= 8.6</column>
+            <column name="rayon">1.4 – 1.9 – 2.5</column>
+            <column name="flux">0.60</column>
+            <column name="temperature">223</column>
+            <column name="periode">48.1</column>
+            <column name="distance">59</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-298d</column>
+            <column name="etoile">Kepler-298</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">? – 26.8 – 9.1</column>
+            <column name="rayon">2017-05-02 00:00:00</column>
+            <column name="flux">1.29</column>
+            <column name="temperature">271</column>
+            <column name="periode">77.5</column>
+            <column name="distance">1545</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.68</column>
+            <column name="sph">0.00</column>
+            <column name="hzd">-0.86</column>
+            <column name="hzc">-0.11</column>
+            <column name="hza"> +2.11</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">1545</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2012</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-174d</column>
+            <column name="etoile">Kepler-174</column>
+            <column name="typeEtoile">K?V</column>
+            <column name="masse">? – 14.8 – 5.5</column>
+            <column name="rayon">2017-02-02 00:00:00</column>
+            <column name="flux">0.43</column>
+            <column name="temperature">206</column>
+            <column name="periode">247.4</column>
+            <column name="distance">1174</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.61</column>
+            <column name="sph">0.00</column>
+            <column name="hzd"> +0.32</column>
+            <column name="hzc">-0.13</column>
+            <column name="hza"> +1.77</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">psychroplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">878.3</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2011</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-296f</column>
+            <column name="etoile">Kepler-296</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">28.7 – 6.1 – 2.5</column>
+            <column name="rayon">2017-08-01 00:00:00</column>
+            <column name="flux">0.34</column>
+            <column name="temperature">198, 274.0±15.0</column>
+            <column name="periode">63.3</column>
+            <column name="distance">737</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.78</column>
+            <column name="sph">0.15</column>
+            <column name="hzd">-0.90</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza"> +0.53</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">Mésoplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">1089.6</column>
+            <column name="status">Confirmée</column>
+            <column name="decouverte">2011</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Gliese 682 c</column>
+            <column name="etoile">Gliese 682</column>
+            <column name="typeEtoile">M3.5V</column>
+            <column name="masse">= 8.7</column>
+            <column name="rayon">1.4 – 1.9 – 2.5</column>
+            <column name="flux">0.37</column>
+            <column name="temperature">198</column>
+            <column name="periode">57.3</column>
+            <column name="distance">17</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">0.59</column>
+            <column name="sph">0.00</column>
+            <column name="hzd"> +0.22</column>
+            <column name="hzc">-0.14</column>
+            <column name="hza"> +1.19</column>
+            <column name="pClasse">Super-terrienne chaude</column>
+            <column name="hClasse">psychroplanète</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">2017-06-16 00:00:00</column>
+            <column name="status">Non-Confirmée</column>
+            <column name="decouverte">2014</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">KOI-4427 b*</column>
+            <column name="etoile">KOI-4427</column>
+            <column name="typeEtoile">M?V</column>
+            <column name="masse">38.5 – 7.4 – 3.0</column>
+            <column name="rayon">2017-08-01 00:00:00</column>
+            <column name="flux">0.24</column>
+            <column name="temperature">179</column>
+            <column name="periode">147.7</column>
+            <column name="distance">782</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-1638b</column>
+            <column name="etoile">Kepler-1638</column>
+            <column name="typeEtoile">G4V</column>
+            <column name="masse">42.7 – 7.9 – 3.1</column>
+            <column name="rayon">2017-09-01 00:00:00</column>
+            <column name="flux">1.39</column>
+            <column name="temperature">276</column>
+            <column name="periode">259.3</column>
+            <column name="distance">2866</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+        <table name="exoplanetes">
+            <column name="planete">Kepler-1090b</column>
+            <column name="etoile">Kepler-1090</column>
+            <column name="typeEtoile">G?V</column>
+            <column name="masse">? – 16.8 – 6.1</column>
+            <column name="rayon">2017-03-02 00:00:00</column>
+            <column name="flux">1.20</column>
+            <column name="temperature">267</column>
+            <column name="periode">198.7</column>
+            <column name="distance">2289</column>
+            <column name="zone">optimistic habitable zone</column>
+            <column name="ist">NULL</column>
+            <column name="sph">NULL</column>
+            <column name="hzd">NULL</column>
+            <column name="hzc">NULL</column>
+            <column name="hza">NULL</column>
+            <column name="pClasse">NULL</column>
+            <column name="hClasse">NULL</column>
+            <column name="phi">NULL</column>
+            <column name="distance2">NULL</column>
+            <column name="status">NULL</column>
+            <column name="decouverte">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>
