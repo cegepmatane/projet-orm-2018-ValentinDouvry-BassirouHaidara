@@ -24,32 +24,9 @@ public class Exoplanete {
 	 private String status;
 	 private String decouverte;
 	 
-	 public Exoplanete(String planete, String etoile, String typeEtoile, String masse, String rayon, String flux,
-			String temperature, String periode, String distance, String zone, float ist, float sph, String hzd,
-			String hzc, String hza, String pClasse, String hclasse, float phi, String distance2, String status,
-			String decouverte) {
+	 public Exoplanete() {
 
-		this.planete = planete;
-		this.etoile = etoile;
-		this.typeEtoile = typeEtoile;
-		this.masse = masse;
-		this.rayon = rayon;
-		this.flux = flux;
-		this.temperature = temperature;
-		this.periode = periode;
-		this.distance = distance;
-		this.zone = zone;
-		this.ist = ist;
-		this.sph = sph;
-		this.hzd = hzd;
-		this.hzc = hzc;
-		this.hza = hza;
-		this.pClasse = pClasse;
-		this.hclasse = hclasse;
-		this.phi = phi;
-		this.distance2 = distance2;
-		this.status = status;
-		this.decouverte = decouverte;
+		
 	}
 
 	public String getPlanete() {
