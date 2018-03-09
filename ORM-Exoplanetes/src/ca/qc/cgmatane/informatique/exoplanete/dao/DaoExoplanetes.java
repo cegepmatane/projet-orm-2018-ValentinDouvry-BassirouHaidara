@@ -15,6 +15,11 @@ public class DaoExoplanetes
 
 	public List<Exoplanete> RecupererExoplanetes()
 	{
-		return null;
+		
+		
+		
+		
+		
+		return listeExoplanete;
 	}
 }
