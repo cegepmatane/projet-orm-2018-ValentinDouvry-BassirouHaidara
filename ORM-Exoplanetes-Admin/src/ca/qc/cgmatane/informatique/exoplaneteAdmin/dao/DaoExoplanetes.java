@@ -15,9 +15,17 @@ public class DaoExoplanetes
 {
 	//test
 	List<Exoplanete> listeExoplanete;
+	Session session;
+	SessionFactory sessionControleur;
+	
 	public DaoExoplanetes()
 	{
 		listeExoplanete = new ArrayList<Exoplanete>();
+		
+		Configuration configuration = new Configuration();
+		configuration.addClass(Exoplanete.class);
+		sessionControleur = configuration.buildSessionFactory();
+		session = sessionControleur.openSession();
 	}
 
 	public List<Exoplanete> RecupererExoplanetes()
@@ -49,9 +57,21 @@ public class DaoExoplanetes
 			listeExoplanete.add(exoplanete);
 		}
 
-		session.close();
-		sessionControleur.close();
+		
 		return listeExoplanete;
 
+	}
+	
+	public void ajouterExoplanetes(Exoplanete exoplanete)
+	{
+		session.save(exoplanete);
+	}
+	
+	public void fermer()
+	{
+		// Nettoyage final (une seule fois)
+		session.close();
+		sessionControleur.close();
+		
 	}
 }
