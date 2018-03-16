@@ -9,6 +9,7 @@ import ca.qc.cgmatane.informatique.exoplaneteAdmin.action.ControleurExoplanetes;
 import ca.qc.cgmatane.informatique.exoplaneteAdmin.modele.Exoplanete;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Tab;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
@@ -20,9 +21,10 @@ public class VueExoplanetes extends Application
 	protected StackPane racine;
  	protected String stringTest;
 	protected Text texteExoplanetes;
-	protected JButton ajouter ;
-	protected JButton modifier ;
-	protected JButton effacer ;
+	protected Button ajouter ;
+	protected Button modifier ;
+	protected Button effacer ;
+
 	public void start(Stage scenePrincipale)
 	{
 		//stringTest = "Hello word";
@@ -38,12 +40,14 @@ public class VueExoplanetes extends Application
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
 		this.controleur = new ControleurExoplanetes(this);
-		ajouter = new JButton();
-		modifier = new JButton();
-		effacer = new JButton();
+		ajouter = new Button();
+		modifier = new Button();
+		effacer = new Button();
 		ajouter.setText("Ajouter");
 		modifier.setText("Modifier");
 		effacer.setText("Effacer");
+		racine.getChildren().add(ajouter);
+
 
 
 
