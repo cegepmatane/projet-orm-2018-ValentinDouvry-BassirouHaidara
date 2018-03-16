@@ -3,14 +3,15 @@ package ca.qc.cgmatane.informatique.exoplaneteAdmin.vue;
 
 import java.util.List;
 
-import javax.swing.JButton;
+
 
 import ca.qc.cgmatane.informatique.exoplaneteAdmin.action.ControleurExoplanetes;
 import ca.qc.cgmatane.informatique.exoplaneteAdmin.modele.Exoplanete;
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Tab;
+
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -41,12 +42,22 @@ public class VueExoplanetes extends Application
 		scenePrincipale.show();
 		this.controleur = new ControleurExoplanetes(this);
 		ajouter = new Button();
+		ajouter.setAlignment(Pos.CENTER_LEFT);
+		//racine.getChildren().add(ajouter);
+
+
 		modifier = new Button();
+		modifier.setAlignment(Pos.TOP_CENTER);
+		
 		effacer = new Button();
+		//racine.getChildren().add(effacer);
 		ajouter.setText("Ajouter");
 		modifier.setText("Modifier");
 		effacer.setText("Effacer");
-		racine.getChildren().add(ajouter);
+		racine.getChildren().addAll(ajouter,modifier,effacer);
+
+
+
 
 
 
