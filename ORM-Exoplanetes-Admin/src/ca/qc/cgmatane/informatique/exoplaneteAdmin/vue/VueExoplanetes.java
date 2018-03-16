@@ -43,14 +43,11 @@ public class VueExoplanetes extends Application
 		this.controleur = new ControleurExoplanetes(this);
 		ajouter = new Button();
 		ajouter.setAlignment(Pos.CENTER_LEFT);
-		//racine.getChildren().add(ajouter);
 
 
 		modifier = new Button();
 		modifier.setAlignment(Pos.TOP_CENTER);
-		
 		effacer = new Button();
-		//racine.getChildren().add(effacer);
 		ajouter.setText("Ajouter");
 		modifier.setText("Modifier");
 		effacer.setText("Effacer");
