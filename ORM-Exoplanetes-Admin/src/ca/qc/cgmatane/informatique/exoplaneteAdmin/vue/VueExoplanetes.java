@@ -31,20 +31,18 @@ public class VueExoplanetes extends Application
 		//stringTest = "Hello word";
 
 		this.racine = new StackPane();
-
-		texteExoplanetes = new Text();
-		texteExoplanetes.setText(stringTest);
-		racine.getChildren().add(texteExoplanetes);
+		//texteExoplanetes = new Text();
+		//texteExoplanetes.setText(stringTest);
+		//racine.getChildren().add(texteExoplanetes);
 		Scene scene = new Scene(racine, 500,500);
 		scenePrincipale.setTitle("Exoplanetes-Admin");
 		scenePrincipale.setScene(scene);
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
 		this.controleur = new ControleurExoplanetes(this);
+		
 		ajouter = new Button();
 		ajouter.setAlignment(Pos.CENTER_LEFT);
-
-
 		modifier = new Button();
 		modifier.setAlignment(Pos.TOP_CENTER);
 		effacer = new Button();

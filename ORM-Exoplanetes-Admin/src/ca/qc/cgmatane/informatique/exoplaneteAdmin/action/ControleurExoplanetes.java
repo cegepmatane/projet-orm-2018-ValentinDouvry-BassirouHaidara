@@ -12,6 +12,7 @@ public class ControleurExoplanetes {
 	protected VueExoplanetes vueExoplanetes;
 	protected DaoExoplanetes daoExoplanetes;
 	protected List<Exoplanete> listeExoplanete;
+	protected Exoplanete testExo1;
 	
 	public ControleurExoplanetes(VueExoplanetes vue)
 	{
@@ -22,7 +23,19 @@ public class ControleurExoplanetes {
 		listeExoplanete = daoExoplanetes.RecupererExoplanetes();
 		//vueExoplanetes.afficherListeExoplanete(listeExoplanete);
 		
+		/*testExo1 = new Exoplanete();
+		testExo1.setPlanete("PlaneteTest");
+		testExo1.setEtoile("etoile");
+		testExo1.setMasse("masse");
+		testExo1.setRayon("rayon");
+		testExo1.setFlux("flux");
 		
+		
+		
+		
+		
+		daoExoplanetes.ajouterExoplanetes(testExo1);
+		daoExoplanetes.fermer();*/
 		
 	}
 
