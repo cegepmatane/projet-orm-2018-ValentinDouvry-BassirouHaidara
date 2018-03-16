@@ -28,7 +28,7 @@ public class VueExoplanetes extends Application
 		texteExoplanetes.setText(stringTest);
 		racine.getChildren().add(texteExoplanetes);
 		Scene scene = new Scene(racine, 500,500);
-		scenePrincipale.setTitle("Exoplanetes");
+		scenePrincipale.setTitle("Exoplanetes-Admin");
 		scenePrincipale.setScene(scene);
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
