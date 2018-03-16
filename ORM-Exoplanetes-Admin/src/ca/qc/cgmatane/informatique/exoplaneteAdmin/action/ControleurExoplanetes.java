@@ -20,7 +20,7 @@ public class ControleurExoplanetes {
 		daoExoplanetes = new DaoExoplanetes();
 		
 		listeExoplanete = daoExoplanetes.RecupererExoplanetes();
-		vueExoplanetes.afficherListeExoplanete(listeExoplanete);
+		//vueExoplanetes.afficherListeExoplanete(listeExoplanete);
 		
 		
 		
