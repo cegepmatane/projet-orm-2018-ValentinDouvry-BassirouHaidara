@@ -3,11 +3,11 @@ package ca.qc.cgmatane.informatique.exoplaneteAdmin.vue;
 
 import java.util.List;
 
-
-
 import ca.qc.cgmatane.informatique.exoplaneteAdmin.action.ControleurExoplanetes;
 import ca.qc.cgmatane.informatique.exoplaneteAdmin.modele.Exoplanete;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -31,25 +31,36 @@ public class VueExoplanetes extends Application
 		//stringTest = "Hello word";
 
 		this.racine = new StackPane();
-		//texteExoplanetes = new Text();
-		//texteExoplanetes.setText(stringTest);
-		//racine.getChildren().add(texteExoplanetes);
+
+		texteExoplanetes = new Text();
+		texteExoplanetes.setText(stringTest);
+		racine.getChildren().add(texteExoplanetes);
 		Scene scene = new Scene(racine, 500,500);
 		scenePrincipale.setTitle("Exoplanetes-Admin");
 		scenePrincipale.setScene(scene);
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
 		this.controleur = new ControleurExoplanetes(this);
-		
 		ajouter = new Button();
-		ajouter.setAlignment(Pos.CENTER_LEFT);
+		ajouter.setTranslateX(-20);
+		ajouter.setTranslateY(-10);
+
+
+
 		modifier = new Button();
-		modifier.setAlignment(Pos.TOP_CENTER);
+		modifier.setTranslateX(-20);
+		modifier.setTranslateY(20);
 		effacer = new Button();
+		effacer.setTranslateX(-20);
+		effacer.setTranslateY(50);
 		ajouter.setText("Ajouter");
 		modifier.setText("Modifier");
 		effacer.setText("Effacer");
 		racine.getChildren().addAll(ajouter,modifier,effacer);
+
+
+
+
 
 
 
