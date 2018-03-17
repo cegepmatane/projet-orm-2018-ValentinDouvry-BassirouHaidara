@@ -1,7 +1,7 @@
 package ca.qc.cgmatane.informatique.exoplaneteAdmin.modele;
 
-public class Exoplanete {
-	
+public class Exoplanete {	 
+
 	 private String planete;
 	 private String etoile;
 	 private String typeEtoile;
@@ -25,9 +25,60 @@ public class Exoplanete {
 	 private String decouverte;
 	 
 	 public Exoplanete() {
-
+		 super();
+		 this.planete = "";
+		 this.etoile = "";
+		 this.typeEtoile="";
+		 this.masse="";
+		 this.masse="";
+		 this.rayon="";
+		 this.flux="";
+		 this.temperature="";
+		 this.periode="";
+		 this.distance="";
+		 this.zone="";
+		 this.ist=0;
+		 this.sph=0;
+		 this.hzd="";
+		 this.hzc="";
+		 this.hza="";
+		 this.pClasse="";
+		 this.hclasse="";
+		 this.phi=0;
+		 this.distance2 ="";
+		 this.status="";
+		 this.decouverte="";
+		 
 		
 	}
+	 
+	 public Exoplanete(String planete, String etoile, String typeEtoile, String masse, String rayon, String flux,
+				String temperature, String periode, String distance, String zone, float ist, float sph, String hzd,
+				String hzc, String hza, String pClasse, String hclasse, float phi, String distance2, String status,
+				String decouverte) {
+			super();
+			this.planete = planete;
+			this.etoile = etoile;
+			this.typeEtoile = typeEtoile;
+			this.masse = masse;
+			this.rayon = rayon;
+			this.flux = flux;
+			this.temperature = temperature;
+			this.periode = periode;
+			this.distance = distance;
+			this.zone = zone;
+			this.ist = ist;
+			this.sph = sph;
+			this.hzd = hzd;
+			this.hzc = hzc;
+			this.hza = hza;
+			this.pClasse = pClasse;
+			this.hclasse = hclasse;
+			this.phi = phi;
+			this.distance2 = distance2;
+			this.status = status;
+			this.decouverte = decouverte;
+		}
 
 	public String getPlanete() {
 		return planete;

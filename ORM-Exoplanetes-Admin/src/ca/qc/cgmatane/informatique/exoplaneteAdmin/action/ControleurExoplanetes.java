@@ -26,32 +26,10 @@ public class ControleurExoplanetes {
 		
 		/*------------------------------------------------------*/
 		// Exoplanete Test pour fonction ajouter dans DAO
-		testExo1 = new Exoplanete();
-		testExo1.setPlanete("PlaneteTest");
-		testExo1.setEtoile("etoile");
-		testExo1.setTypeEtoile("G");
-		testExo1.setMasse("masse");
-		testExo1.setRayon("rayon");
-		testExo1.setFlux("flux");
-		testExo1.setTemperature("Temperature");
-		testExo1.setPeriode("periode");
-		testExo1.setDistance("distance");
-		testExo1.setZone("zone");
-		testExo1.setIst(0);
-		testExo1.setSph(0);
-		testExo1.setHzd("hzd");
-		testExo1.setHzc("hzc");
-		testExo1.setHza("hza");
-		testExo1.setpClasse("pClasse");
-		testExo1.sethClasse("hclasse");
-		testExo1.setPhi(0);
-		testExo1.setDistance2("distance2");
-		testExo1.setStatus("status");
-		testExo1.setDecouverte("decouverte");
-		
+		testExo1 = new Exoplanete();		
 		daoExoplanetes.ajouterExoplanetes(testExo1);
-		daoExoplanetes.fermer();
-		
+		//daoExoplanetes.supprimerExoplanetes(testExo1);
+		daoExoplanetes.fermer();		
 		/*-------------------------------------------*/
 		
 		
