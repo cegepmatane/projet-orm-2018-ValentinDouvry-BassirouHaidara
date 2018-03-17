@@ -57,7 +57,56 @@ public class VueExoplanetes extends Application
 		modifier.setText("Modifier");
 		effacer.setText("Effacer");
 		racine.getChildren().addAll(ajouter,modifier,effacer);
+	//Action du click sur le bouton ajouter
+		ajouter.setOnAction(new EventHandler<ActionEvent>()
+		{
+			public void handle(ActionEvent event)
 
+			{
+
+
+				System.out.println("test");
+
+			}
+
+
+
+
+		});
+
+		//Action du click sur le bouton modifier
+				modifier.setOnAction(new EventHandler<ActionEvent>()
+				{
+					public void handle(ActionEvent event)
+
+					{
+
+
+						System.out.println("test");
+
+					}
+
+
+
+
+				});
+
+				//Action du click sur le bouton effacer
+				effacer.setOnAction(new EventHandler<ActionEvent>()
+				{
+					public void handle(ActionEvent event)
+
+					{
+
+
+						System.out.println("test");
+
+					}
+
+
+
+
+				});
 
 
 
