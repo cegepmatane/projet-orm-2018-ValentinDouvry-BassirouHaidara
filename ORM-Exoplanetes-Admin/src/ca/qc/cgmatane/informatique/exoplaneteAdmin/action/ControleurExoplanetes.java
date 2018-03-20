@@ -37,17 +37,18 @@ public class ControleurExoplanetes {
 	
 	public void supprimerExoplanete(Exoplanete exoplanete)
 	{
-		//daoExoplanetes.supprimerExoplanetes(exoplanete);
-		System.out.println(exoplanete.getPlanete());
+		daoExoplanetes.supprimerExoplanetes(exoplanete);
+		
 	}
 	
 	public void ajouterExoplanete()
 	{
+		//vueExoplanetes.ajouterExoplanete();
 		//daoExoplanetes.ajouterExoplanetes(testExo1);
 	}
 
 	public void modifierExoplanete(Exoplanete exoplanete)
 	{
-		System.out.println(exoplanete.getPlanete());
+		
 	}
 }
