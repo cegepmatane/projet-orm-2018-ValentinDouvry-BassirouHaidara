@@ -95,4 +95,8 @@ public class VueExoplanetes extends Application
 		
 
 	}
+	public void ajouterExoplanete()
+	{
+		
+	}
 }

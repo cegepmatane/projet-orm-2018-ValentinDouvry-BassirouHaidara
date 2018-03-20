@@ -43,7 +43,7 @@ public class ControleurExoplanetes {
 	
 	public void ajouterExoplanete()
 	{
-		//vueExoplanetes.ajouterExoplanete();
+		vueExoplanetes.ajouterExoplanete();
 		//daoExoplanetes.ajouterExoplanetes(testExo1);
 	}
 
