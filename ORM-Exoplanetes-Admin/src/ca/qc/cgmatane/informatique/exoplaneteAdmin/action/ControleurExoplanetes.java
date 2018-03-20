@@ -12,7 +12,7 @@ public class ControleurExoplanetes {
 	protected VueExoplanetes vueExoplanetes;
 	protected DaoExoplanetes daoExoplanetes;
 	protected List<Exoplanete> listeExoplanete;
-	protected Exoplanete testExo1;
+	public Exoplanete testExo1;
 	
 	public ControleurExoplanetes(VueExoplanetes vue)
 	{
@@ -26,13 +26,19 @@ public class ControleurExoplanetes {
 		
 		/*------------------------------------------------------*/
 		// Exoplanete Test pour fonction ajouter dans DAO
-		testExo1 = new Exoplanete();		
-		daoExoplanetes.ajouterExoplanetes(testExo1);
+		testExo1 = new Exoplanete();	
+		testExo1.setId(44);
+		//daoExoplanetes.ajouterExoplanetes(testExo1);
 		//daoExoplanetes.supprimerExoplanetes(testExo1);
-		daoExoplanetes.fermer();		
+		//daoExoplanetes.fermer();		
 		/*-------------------------------------------*/
 		
 		
+	}
+	
+	public void supprimerExoplanete(Exoplanete exoplanete)
+	{
+		daoExoplanetes.supprimerExoplanetes(exoplanete);
 	}
 
 }

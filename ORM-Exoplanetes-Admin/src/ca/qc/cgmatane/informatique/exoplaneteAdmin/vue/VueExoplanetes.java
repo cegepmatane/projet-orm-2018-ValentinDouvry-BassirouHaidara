@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 
 public class VueExoplanetes extends Application
 {
-	protected ControleurExoplanetes controleur;
+	protected ControleurExoplanetes controleurExoplanetes;
 	protected StackPane racine;
  	protected String stringTest;
 	protected Text texteExoplanetes;
@@ -40,7 +40,7 @@ public class VueExoplanetes extends Application
 		scenePrincipale.setScene(scene);
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
-		this.controleur = new ControleurExoplanetes(this);
+		this.controleurExoplanetes = new ControleurExoplanetes(this);
 		ajouter = new Button();
 		ajouter.setTranslateX(-20);
 		ajouter.setTranslateY(-10);
@@ -99,7 +99,7 @@ public class VueExoplanetes extends Application
 					{
 
 
-						System.out.println("test");
+						controleurExoplanetes.supprimerExoplanete(controleurExoplanetes.testExo1);
 
 					}
 

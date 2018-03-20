@@ -70,6 +70,7 @@ public class DaoExoplanetes
 	public void supprimerExoplanetes(Exoplanete exoplanete)
 	{
 		Transaction transaction = session.beginTransaction();
+		int id = exoplanete.getId();
 		session.delete(exoplanete);
 		transaction.commit();
 	}
