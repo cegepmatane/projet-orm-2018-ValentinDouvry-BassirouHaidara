@@ -8,9 +8,13 @@ import ca.qc.cgmatane.informatique.exoplaneteAdmin.modele.Exoplanete;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollBar;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -20,19 +24,29 @@ import javafx.stage.Stage;
 public class VueExoplanetes extends Application
 {
 	protected ControleurExoplanetes controleurExoplanetes;
-	protected StackPane racine;
+	protected BorderPane racine;
  	protected String stringTest;
 	protected Text texteExoplanetes;
-	//protected Button ajouter;
+	protected Button ajouter;
 	//protected Button modifier;
 	//protected Button effacer;
-
+	protected ScrollPane scrollPane;
+	
 	public void start(Stage scenePrincipale)
 	{
 		//stringTest = "Hello word";
-
-		this.racine = new StackPane();
-
+		this.racine = new BorderPane();
+		this.scrollPane = new ScrollPane();
+		this.ajouter = new Button("Ajouter");
+		ajouter.setOnAction(new EventHandler<ActionEvent>()
+		{
+			public void handle(ActionEvent event)
+			{
+				controleurExoplanetes.ajouterExoplanete();
+			}
+		});
+		this.racine.setTop(ajouter);
+		this.racine.setCenter(scrollPane);
 		//texteExoplanetes = new Text();
 		//texteExoplanetes.setText(stringTest);
 		//racine.getChildren().add(texteExoplanetes);
@@ -74,7 +88,7 @@ public class VueExoplanetes extends Application
 			box.getChildren().add(hBox);
 			
 		}
-		this.racine.getChildren().add(box);
+		this.scrollPane.setContent(box);
 		
 		/*this.texteExoplanetes.setWrappingWidth(500);
 		this.texteExoplanetes.setText(texte);*/	

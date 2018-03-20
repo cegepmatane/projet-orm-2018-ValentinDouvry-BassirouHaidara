@@ -41,7 +41,7 @@ public class ControleurExoplanetes {
 		System.out.println(exoplanete.getPlanete());
 	}
 	
-	public void AjouterExoplanete(Exoplanete exoplanete)
+	public void ajouterExoplanete()
 	{
 		//daoExoplanetes.ajouterExoplanetes(testExo1);
 	}
