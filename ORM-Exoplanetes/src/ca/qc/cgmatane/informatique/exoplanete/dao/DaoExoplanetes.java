@@ -14,6 +14,8 @@ import ca.qc.cgmatane.informatique.exoplanete.modele.Exoplanete;
 public class DaoExoplanetes
 {
 	List<Exoplanete> listeExoplanete;
+	Session session;
+	SessionFactory sessionControleur;
 	public DaoExoplanetes()
 	{
 		listeExoplanete = new ArrayList<Exoplanete>();
@@ -24,8 +26,8 @@ public class DaoExoplanetes
 		
 		Configuration configuration = new Configuration();
 		configuration.addClass(Exoplanete.class);
-		SessionFactory sessionControleur = configuration.buildSessionFactory();
-		Session session = sessionControleur.openSession();
+		sessionControleur = configuration.buildSessionFactory();
+		session = sessionControleur.openSession();
 		
 		Transaction operation = null;
 		try
@@ -48,9 +50,14 @@ public class DaoExoplanetes
 			listeExoplanete.add(exoplanete);
 		}
 		
-		session.close();
-		sessionControleur.close();
+		
 		return listeExoplanete;
 		
+	}
+	
+	public void fermer()
+	{
+		session.close();
+		sessionControleur.close();
 	}
 }

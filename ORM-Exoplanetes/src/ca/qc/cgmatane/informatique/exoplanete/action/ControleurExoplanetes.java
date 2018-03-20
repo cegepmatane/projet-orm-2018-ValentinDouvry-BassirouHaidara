@@ -21,6 +21,9 @@ public class ControleurExoplanetes {
 		
 		listeExoplanete = daoExoplanetes.RecupererExoplanetes();
 		vueExoplanetes.afficherListeExoplanete(listeExoplanete);
+		/*for (Exoplanete exoplanete : listeExoplanete) {
+			System.out.println(exoplanete.getId());
+		}*/
 		
 		
 		

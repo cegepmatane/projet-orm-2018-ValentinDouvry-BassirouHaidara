@@ -2,6 +2,7 @@ package ca.qc.cgmatane.informatique.exoplanete.modele;
 
 public class Exoplanete {
 	
+	 private int id;
 	 private String planete;
 	 private String etoile;
 	 private String typeEtoile;
@@ -12,14 +13,14 @@ public class Exoplanete {
 	 private String periode;
 	 private String distance;
 	 private String zone;
-	 private float ist;
-	 private float sph;
+	 //private float ist;
+	 //private float sph;
 	 private String hzd;
 	 private String hzc;
 	 private String hza;
 	 private String pClasse;
 	 private String hclasse;
-	 private float phi;
+	 //private float phi;
 	 private String distance2;
 	 private String status;
 	 private String decouverte;
@@ -109,7 +110,7 @@ public class Exoplanete {
 		this.zone = zone;
 	}
 
-	public float getIst() {
+	/*public float getIst() {
 		return ist;
 	}
 
@@ -123,7 +124,7 @@ public class Exoplanete {
 
 	public void setSph(float sph) {
 		this.sph = sph;
-	}
+	}*/
 
 	public String getHzd() {
 		return hzd;
@@ -165,13 +166,13 @@ public class Exoplanete {
 		this.hclasse = hclasse;
 	}
 
-	public float getPhi() {
+	/*public float getPhi() {
 		return phi;
 	}
 
 	public void setPhi(float phi) {
 		this.phi = phi;
-	}
+	}*/
 
 	public String getDistance2() {
 		return distance2;
@@ -196,6 +197,15 @@ public class Exoplanete {
 	public void setDecouverte(String decouverte) {
 		this.decouverte = decouverte;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	
 	 
 	 
