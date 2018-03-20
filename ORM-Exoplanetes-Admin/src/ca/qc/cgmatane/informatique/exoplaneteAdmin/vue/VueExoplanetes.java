@@ -11,8 +11,9 @@ import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -22,9 +23,9 @@ public class VueExoplanetes extends Application
 	protected StackPane racine;
  	protected String stringTest;
 	protected Text texteExoplanetes;
-	protected Button ajouter ;
-	protected Button modifier ;
-	protected Button effacer ;
+	//protected Button ajouter;
+	//protected Button modifier;
+	//protected Button effacer;
 
 	public void start(Stage scenePrincipale)
 	{
@@ -32,102 +33,52 @@ public class VueExoplanetes extends Application
 
 		this.racine = new StackPane();
 
-		texteExoplanetes = new Text();
-		texteExoplanetes.setText(stringTest);
-		racine.getChildren().add(texteExoplanetes);
+		//texteExoplanetes = new Text();
+		//texteExoplanetes.setText(stringTest);
+		//racine.getChildren().add(texteExoplanetes);
 		Scene scene = new Scene(racine, 500,500);
 		scenePrincipale.setTitle("Exoplanetes-Admin");
 		scenePrincipale.setScene(scene);
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
 		this.controleurExoplanetes = new ControleurExoplanetes(this);
-		ajouter = new Button();
-		ajouter.setTranslateX(-20);
-		ajouter.setTranslateY(-10);
-
-
-
-		modifier = new Button();
-		modifier.setTranslateX(-20);
-		modifier.setTranslateY(20);
-		effacer = new Button();
-		effacer.setTranslateX(-20);
-		effacer.setTranslateY(50);
-		ajouter.setText("Ajouter");
-		modifier.setText("Modifier");
-		effacer.setText("Effacer");
-		racine.getChildren().addAll(ajouter,modifier,effacer);
-	//Action du click sur le bouton ajouter
-		ajouter.setOnAction(new EventHandler<ActionEvent>()
-		{
-			public void handle(ActionEvent event)
-
-			{
-
-
-				System.out.println("test");
-
-			}
-
-
-
-
-		});
-
-		//Action du click sur le bouton modifier
-				modifier.setOnAction(new EventHandler<ActionEvent>()
-				{
-					public void handle(ActionEvent event)
-
-					{
-
-
-						System.out.println("test");
-
-					}
-
-
-
-
-				});
-
-				//Action du click sur le bouton effacer
-				effacer.setOnAction(new EventHandler<ActionEvent>()
-				{
-					public void handle(ActionEvent event)
-
-					{
-
-
-						controleurExoplanetes.supprimerExoplanete(controleurExoplanetes.testExo1);
-
-					}
-
-
-
-
-				});
-
-
-
-
-
-
-
-
-
-
 	}
 
 	public void afficherListeExoplanete(List<Exoplanete> listExoplanete)
 	{
-		String texte = "";
+				
+		VBox box = new VBox();
 		for (Exoplanete exoplanete : listExoplanete) {
-			texte+=exoplanete.getPlanete();
-			texte+= " - ";
+			HBox hBox = new HBox();
+			Text nomPlanete = new Text();
+			String texte = "";
+			Button modifier = new Button("Modifier");
+			modifier.setOnAction(new EventHandler<ActionEvent>()
+			{
+				public void handle(ActionEvent event)
+				{
+					controleurExoplanetes.modifierExoplanete(exoplanete);
+				}
+			});
+			Button supprimer = new Button("Supprimer");
+			supprimer.setOnAction(new EventHandler<ActionEvent>()
+			{
+				public void handle(ActionEvent event)
+				{
+					controleurExoplanetes.supprimerExoplanete(exoplanete);
+				}
+			});
+			texte = exoplanete.getPlanete();
+			nomPlanete.setText(texte);
+			hBox.getChildren().addAll(nomPlanete, modifier, supprimer);
+			box.getChildren().add(hBox);
+			
 		}
-		this.texteExoplanetes.setWrappingWidth(500);
-		this.texteExoplanetes.setText(texte);
+		this.racine.getChildren().add(box);
+		
+		/*this.texteExoplanetes.setWrappingWidth(500);
+		this.texteExoplanetes.setText(texte);*/	
+		
 
 	}
 }
