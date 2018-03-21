@@ -52,6 +52,7 @@ public class VueExoplanetes extends Application
 				nouveauFenetre.setTitle("Fenetre Ajouter");
 				nouveauFenetre.setScene(sceneSecondaire);
 				nouveauFenetre.show();
+				scenePrincipale.close();
 				
 						
 			}
