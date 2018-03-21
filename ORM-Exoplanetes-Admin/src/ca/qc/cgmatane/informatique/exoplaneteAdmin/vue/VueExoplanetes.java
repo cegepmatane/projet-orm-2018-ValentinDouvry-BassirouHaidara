@@ -12,6 +12,7 @@ import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollBar;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
@@ -43,6 +44,16 @@ public class VueExoplanetes extends Application
 			public void handle(ActionEvent event)
 			{
 				controleurExoplanetes.ajouterExoplanete();
+				Label secondFenetre = new Label();
+				BorderPane secondBorder = new BorderPane();
+				secondBorder.getChildren().add(secondFenetre);
+				Scene sceneSecondaire = new Scene(secondBorder,500,500);
+				Stage nouveauFenetre = new Stage();
+				nouveauFenetre.setTitle("Fenetre Ajouter");
+				nouveauFenetre.setScene(sceneSecondaire);
+				nouveauFenetre.show();
+				
+						
 			}
 		});
 		this.racine.setTop(ajouter);
@@ -72,6 +83,7 @@ public class VueExoplanetes extends Application
 				public void handle(ActionEvent event)
 				{
 					controleurExoplanetes.modifierExoplanete(exoplanete);
+					
 				}
 			});
 			Button supprimer = new Button("Supprimer");
@@ -80,6 +92,7 @@ public class VueExoplanetes extends Application
 				public void handle(ActionEvent event)
 				{
 					controleurExoplanetes.supprimerExoplanete(exoplanete);
+					
 				}
 			});
 			texte = exoplanete.getPlanete();
