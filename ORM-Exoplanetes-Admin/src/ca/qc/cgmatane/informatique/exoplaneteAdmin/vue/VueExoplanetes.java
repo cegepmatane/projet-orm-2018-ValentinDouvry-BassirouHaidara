@@ -29,35 +29,42 @@ public class VueExoplanetes extends Application
  	protected String stringTest;
 	protected Text texteExoplanetes;
 	protected Button ajouter;
+	protected Button quitter;
 	//protected Button modifier;
 	//protected Button effacer;
 	protected ScrollPane scrollPane;
+	protected Label secondFenetre;
+	protected BorderPane secondBorder;
+	protected Scene sceneSecondaire;
+	protected Stage fenetreAjouter;
 	
 	public void start(Stage scenePrincipale)
 	{
 		//stringTest = "Hello word";
 		this.racine = new BorderPane();
 		this.scrollPane = new ScrollPane();
+		
 		this.ajouter = new Button("Ajouter");
 		ajouter.setOnAction(new EventHandler<ActionEvent>()
 		{
 			public void handle(ActionEvent event)
 			{
-				controleurExoplanetes.ajouterExoplanete();
-				Label secondFenetre = new Label();
-				BorderPane secondBorder = new BorderPane();
-				secondBorder.getChildren().add(secondFenetre);
-				Scene sceneSecondaire = new Scene(secondBorder,500,500);
-				Stage nouveauFenetre = new Stage();
-				nouveauFenetre.setTitle("Fenetre Ajouter");
-				nouveauFenetre.setScene(sceneSecondaire);
-				nouveauFenetre.show();
-				scenePrincipale.close();
-				
-						
+				controleurExoplanetes.ajouterExoplanete();						
 			}
 		});
-		this.racine.setTop(ajouter);
+		
+		this.quitter = new Button("Quitter");
+		quitter.setOnAction(new EventHandler<ActionEvent>()
+		{
+			public void handle(ActionEvent event)
+			{
+				controleurExoplanetes.fermerApplication();						
+			}
+		});
+		HBox hBox = new HBox();
+		hBox.getChildren().addAll(ajouter,quitter);
+		this.racine.setTop(hBox);
+		
 		this.racine.setCenter(scrollPane);
 		//texteExoplanetes = new Text();
 		//texteExoplanetes.setText(stringTest);
@@ -68,6 +75,16 @@ public class VueExoplanetes extends Application
 		scenePrincipale.setResizable(false);
 		scenePrincipale.show();
 		this.controleurExoplanetes = new ControleurExoplanetes(this);
+		/*----------------------------------------------------------------*/
+		//Fenetre Ajouter
+		secondFenetre = new Label();
+		secondBorder = new BorderPane();
+		secondBorder.getChildren().add(secondFenetre);
+		sceneSecondaire = new Scene(secondBorder,500,500);
+		fenetreAjouter = new Stage();
+		fenetreAjouter.setTitle("Fenetre Ajouter");
+		fenetreAjouter.setScene(sceneSecondaire);
+		
 	}
 
 	public void afficherListeExoplanete(List<Exoplanete> listExoplanete)
@@ -112,5 +129,10 @@ public class VueExoplanetes extends Application
 	public void ajouterExoplanete()
 	{
 		
+	}
+	
+	public void afficherFenetreAjouter() 
+	{
+		fenetreAjouter.show();
 	}
 }

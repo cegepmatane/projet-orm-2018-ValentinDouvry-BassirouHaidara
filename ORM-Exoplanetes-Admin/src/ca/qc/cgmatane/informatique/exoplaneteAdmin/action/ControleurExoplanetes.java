@@ -43,12 +43,17 @@ public class ControleurExoplanetes {
 	
 	public void ajouterExoplanete()
 	{
-		vueExoplanetes.ajouterExoplanete();
+		vueExoplanetes.afficherFenetreAjouter();
 		//daoExoplanetes.ajouterExoplanetes(testExo1);
 	}
 
 	public void modifierExoplanete(Exoplanete exoplanete)
 	{
 		
+	}
+	
+	public void fermerApplication()
+	{
+		System.exit(0);
 	}
 }
