@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollBar;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -30,13 +31,26 @@ public class VueExoplanetes extends Application
 	protected Text texteExoplanetes;
 	protected Button ajouter;
 	protected Button quitter;
+	
 	//protected Button modifier;
 	//protected Button effacer;
 	protected ScrollPane scrollPane;
 	protected Label secondFenetre;
-	protected BorderPane secondBorder;
+	protected HBox hbox2;
 	protected Scene sceneSecondaire;
 	protected Stage fenetreAjouter;
+	
+	protected Label labelPlanete;
+	protected Label labelEtoile;
+	protected Label labelTypeEtoile;
+	protected Label labelMasse;
+	protected Label labelFlux;
+	protected Label labelTemperature;
+	protected Label labelPeriode;
+	protected Label labelDistance;
+	protected Label labelZone;
+	protected Label labelDecouverte;
+	
 	
 	public void start(Stage scenePrincipale)
 	{
@@ -78,12 +92,39 @@ public class VueExoplanetes extends Application
 		/*----------------------------------------------------------------*/
 		//Fenetre Ajouter
 		secondFenetre = new Label();
-		secondBorder = new BorderPane();
-		secondBorder.getChildren().add(secondFenetre);
-		sceneSecondaire = new Scene(secondBorder,500,500);
+		hbox2 = new HBox();
+		hbox2.getChildren().add(secondFenetre);
+		sceneSecondaire = new Scene(hbox2,500,500);
 		fenetreAjouter = new Stage();
 		fenetreAjouter.setTitle("Fenetre Ajouter");
 		fenetreAjouter.setScene(sceneSecondaire);
+		 labelPlanete = new Label("Planete:");
+		 labelEtoile = new Label("Etoile");
+		 labelTypeEtoile = new Label("TypeEtoile");
+		 labelMasse = new Label("Masse");
+		 labelFlux = new Label("Flux");
+		 labelTemperature = new Label("Temperature");
+		 labelPeriode = new Label("Periode");
+		 labelDistance = new Label("Distance");
+		 labelZone = new Label("zone");
+		 labelDecouverte = new Label("Decouverte");
+		TextField planeTextField = new TextField();
+		TextField etoileTextField = new TextField();
+		TextField typeTextField = new TextField();
+		TextField masseTextField = new TextField();
+		TextField fluxTextField = new TextField();
+		TextField temperatureTextField = new TextField();
+		TextField periodeTextField = new TextField();
+		TextField distanceTextField = new TextField();
+		TextField zoneTextField = new TextField();
+		TextField decouverteTextField = new TextField();
+		
+		hbox2.getChildren().addAll(labelPlanete,planeTextField);
+		
+		
+		
+		
+		
 		
 	}
 
