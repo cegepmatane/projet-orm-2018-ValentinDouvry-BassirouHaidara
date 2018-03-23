@@ -52,6 +52,16 @@ public class VueExoplanetes extends Application
 	protected Label labelDistance;
 	protected Label labelZone;
 	protected Label labelDecouverte;
+	protected TextField planeTextField;
+	protected TextField etoileTextField;
+	protected TextField typeTextField;
+	protected TextField masseTextField;
+	protected TextField fluxTextField;
+	protected TextField temperatureTextField ;
+	protected TextField periodeTextField;
+	protected TextField distanceTextField;
+	protected TextField zoneTextField;
+	protected TextField decouverteTextField;
 
 
 	public void start(Stage scenePrincipale)
@@ -110,16 +120,16 @@ public class VueExoplanetes extends Application
 		 labelDistance = new Label("Distance");
 		 labelZone = new Label("zone");
 		 labelDecouverte = new Label("Decouverte");
-		TextField planeTextField = new TextField();
-		TextField etoileTextField = new TextField();
-		TextField typeTextField = new TextField();
-		TextField masseTextField = new TextField();
-		TextField fluxTextField = new TextField();
-		TextField temperatureTextField = new TextField();
-		TextField periodeTextField = new TextField();
-		TextField distanceTextField = new TextField();
-		TextField zoneTextField = new TextField();
-		TextField decouverteTextField = new TextField();
+		 planeTextField = new TextField();
+		 etoileTextField = new TextField();
+		 typeTextField = new TextField();
+		 masseTextField = new TextField();
+		 fluxTextField = new TextField();
+		temperatureTextField = new TextField();
+		 periodeTextField = new TextField();
+		distanceTextField = new TextField();
+		 zoneTextField = new TextField();
+		decouverteTextField = new TextField();
 
 
 		gridPane.setPadding(new Insets(15,15,15,15));
