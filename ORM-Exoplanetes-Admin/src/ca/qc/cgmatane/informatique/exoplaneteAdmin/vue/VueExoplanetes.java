@@ -8,19 +8,17 @@ import ca.qc.cgmatane.informatique.exoplaneteAdmin.modele.Exoplanete;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
-import javafx.geometry.Orientation;
-import javafx.geometry.Pos;
+import javafx.geometry.VPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ScrollBar;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -33,9 +31,8 @@ public class VueExoplanetes extends Application
 	protected Text texteExoplanetes;
 	protected Button ajouter;
 	protected Button quitter;
+	protected Button enregister;
 
-	//protected Button modifier;
-	//protected Button effacer;
 	protected ScrollPane scrollPane;
 	protected Label secondFenetre;
 	protected GridPane gridPane;
@@ -115,6 +112,10 @@ public class VueExoplanetes extends Application
 		fenetreAjouter = new Stage();
 		fenetreAjouter.setTitle("Fenetre Ajouter");
 		fenetreAjouter.setScene(sceneSecondaire);
+		enregister = new Button("Enregistrer");
+		GridPane.setConstraints(enregister, 2, 2, 1, 1,HPos.CENTER, VPos.BOTTOM, null, null);
+		gridPane.getChildren().add(enregister);
+
 		 labelPlanete = new Label("Planete");
 		 labelEtoile = new Label("Etoile");
 		 labelTypeEtoile = new Label("TypeEtoile");
