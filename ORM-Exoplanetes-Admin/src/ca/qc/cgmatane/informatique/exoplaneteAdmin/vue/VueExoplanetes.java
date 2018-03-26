@@ -38,11 +38,6 @@ public class VueExoplanetes extends Application
 	protected GridPane gridPane;
 	protected Scene sceneSecondaire;
 	protected Stage fenetreAjouter;
-	// Scene Modifier
-	protected Label fenetrModifier;
-	protected GridPane gridPaneModifer;
-	protected Scene sceneModifier;
-	protected Stage fenetreModifier;
 
 	protected Label labelPlanete;
 	protected Label labelEtoile;
@@ -217,24 +212,6 @@ public class VueExoplanetes extends Application
 			HBox hBox = new HBox();
 			Text nomPlanete = new Text();
 			String texte = "";
-			Button modifier = new Button("Modifier");
-			//modifier fenetre
-			/*fenetrModifier = new Label();
-			gridPaneModifer = new GridPane();
-			gridPaneModifer.getChildren().add(fenetrModifier);
-			sceneModifier = new Scene(gridPaneModifer,500,500);
-			fenetreModifier = new Stage();
-			fenetreModifier.setTitle("Fenetre Modifier");
-			fenetreModifier.setScene(sceneModifier);*/
-			modifier.setOnAction(new EventHandler<ActionEvent>()
-			{
-				public void handle(ActionEvent event)
-				{
-					controleurExoplanetes.modifierExoplanete(exoplanete);
-
-				}
-			});
-
 			Button supprimer = new Button("Supprimer");
 			supprimer.setOnAction(new EventHandler<ActionEvent>()
 			{
@@ -246,7 +223,7 @@ public class VueExoplanetes extends Application
 			});
 			texte = exoplanete.getPlanete();
 			nomPlanete.setText(texte);
-			hBox.getChildren().addAll(nomPlanete, modifier, supprimer);
+			hBox.getChildren().addAll(nomPlanete, supprimer);
 			box.getChildren().add(hBox);
 
 		}

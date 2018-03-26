@@ -66,10 +66,6 @@ public class DaoExoplanetes
 		transaction.commit();
 	}
 	
-	public void modifierExoplanetes(Exoplanete exoplanete)
-	{
-		
-	}
 	public void fermer()
 	{
 		// Nettoyage final (une seule fois)

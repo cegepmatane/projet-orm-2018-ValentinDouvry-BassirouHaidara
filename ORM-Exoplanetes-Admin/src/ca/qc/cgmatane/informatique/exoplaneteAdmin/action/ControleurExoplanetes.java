@@ -52,14 +52,10 @@ public class ControleurExoplanetes {
 		System.out.println(exoplanete.getMasse());*/
 		afficherListeExoplanete();
 	}
-
-	public void modifierExoplanete(Exoplanete exoplanete)
-	{
-
-	}
-
+	
 	public void fermerApplication()
 	{
+		daoExoplanetes.fermer();
 		System.exit(0);
 	}
 	
