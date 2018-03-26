@@ -120,6 +120,7 @@ public class VueExoplanetes extends Application
 			public void handle(ActionEvent event)
 			{
 				controleurExoplanetes.enregistrerExoplanete();
+				fenetreAjouter.close();
 			}
 		});
 
@@ -260,6 +261,15 @@ public class VueExoplanetes extends Application
 	{
 		Exoplanete exoplanete = new Exoplanete();
 		exoplanete.setPlanete(planeTextField.getText());
+		exoplanete.setEtoile(etoileTextField.getText());
+		exoplanete.setTypeEtoile(typeTextField.getText());
+		exoplanete.setMasse(masseTextField.getText());
+		exoplanete.setFlux(fluxTextField.getText());
+		exoplanete.setTemperature(temperatureTextField.getText());
+		exoplanete.setPeriode(periodeTextField.getText());
+		exoplanete.setDistance(distanceTextField.getText());
+		exoplanete.setZone(zoneTextField.getText());
+		exoplanete.setDecouverte(decouverteTextField.getText());
 		return exoplanete;
 	}
 
