@@ -30,12 +30,6 @@ public class DaoExoplanetes
 
 	public List<Exoplanete> RecupererExoplanetes()
 	{
-
-		Configuration configuration = new Configuration();
-		configuration.addClass(Exoplanete.class);
-		SessionFactory sessionControleur = configuration.buildSessionFactory();
-		Session session = sessionControleur.openSession();
-
 		Transaction operation = null;
 		try
 		{

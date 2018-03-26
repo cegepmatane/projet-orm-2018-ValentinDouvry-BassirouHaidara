@@ -115,6 +115,13 @@ public class VueExoplanetes extends Application
 		enregister = new Button("Enregistrer");
 		GridPane.setConstraints(enregister, 2, 2, 1, 1,HPos.CENTER, VPos.BOTTOM, null, null);
 		gridPane.getChildren().add(enregister);
+		/*enregister.setOnAction(new EventHandler<ActionEvent>()
+		{
+			public void handle(ActionEvent event)
+			{
+				controleurExoplanetes.enregistrerExoplanete(exoplanete);;
+			}
+		});*/
 
 		 labelPlanete = new Label("Planete");
 		 labelEtoile = new Label("Etoile");
