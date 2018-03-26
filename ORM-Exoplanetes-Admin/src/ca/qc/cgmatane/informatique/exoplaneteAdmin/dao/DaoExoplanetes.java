@@ -61,7 +61,7 @@ public class DaoExoplanetes
 	
 	public void supprimerExoplanetes(Exoplanete exoplanete)
 	{
-		Transaction transaction = session.beginTransaction();
+		Transaction transaction = session.getTransaction();
 		session.delete(exoplanete);
 		transaction.commit();
 	}

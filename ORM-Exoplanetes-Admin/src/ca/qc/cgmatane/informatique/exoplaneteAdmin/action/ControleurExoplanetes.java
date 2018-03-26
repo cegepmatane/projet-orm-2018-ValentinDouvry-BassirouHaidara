@@ -34,13 +34,12 @@ public class ControleurExoplanetes {
 	public void supprimerExoplanete(Exoplanete exoplanete)
 	{
 		daoExoplanetes.supprimerExoplanetes(exoplanete);
-
+		afficherListeExoplanete();
 	}
 
 	public void ajouterExoplanete()
 	{
-		vueExoplanetes.afficherFenetreAjouter();
-		
+		vueExoplanetes.afficherFenetreAjouter();		
 	}
 	
 	public void enregistrerExoplanete()
