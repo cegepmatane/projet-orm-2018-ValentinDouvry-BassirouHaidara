@@ -19,11 +19,7 @@ public class ControleurExoplanetes {
 		this.listeExoplanete = new ArrayList<Exoplanete>();
 		this.vueExoplanetes = vue;
 		daoExoplanetes = new DaoExoplanetes();
-
-		listeExoplanete = daoExoplanetes.RecupererExoplanetes();
-		vueExoplanetes.afficherListeExoplanete(listeExoplanete);
-
-
+		afficherListeExoplanete();
 		/*------------------------------------------------------*/
 		// Exoplanete Test pour fonction ajouter dans DAO
 		testExo1 = new Exoplanete();
@@ -52,7 +48,10 @@ public class ControleurExoplanetes {
 		Exoplanete exoplanete;
 		exoplanete = vueExoplanetes.ajouterExoplanete();
 		daoExoplanetes.ajouterExoplanetes(exoplanete);
-		//System.out.println(exoplanete.getPlanete());
+		/*System.out.println(exoplanete.getPlanete());
+		System.out.println(exoplanete.getDistance());
+		System.out.println(exoplanete.getMasse());*/
+		afficherListeExoplanete();
 	}
 
 	public void modifierExoplanete(Exoplanete exoplanete)
@@ -63,5 +62,11 @@ public class ControleurExoplanetes {
 	public void fermerApplication()
 	{
 		System.exit(0);
+	}
+	
+	public void afficherListeExoplanete()
+	{
+		listeExoplanete = daoExoplanetes.RecupererExoplanetes();
+		vueExoplanetes.afficherListeExoplanete(listeExoplanete);
 	}
 }
