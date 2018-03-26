@@ -14,9 +14,9 @@ import ca.qc.cgmatane.informatique.exoplaneteAdmin.modele.Exoplanete;
 public class DaoExoplanetes
 {
 	//test
-	List<Exoplanete> listeExoplanete;
-	Session session;
-	SessionFactory sessionControleur;
+	private List<Exoplanete> listeExoplanete;
+	private Session session;
+	private SessionFactory sessionControleur;
 	
 	public DaoExoplanetes()
 	{
@@ -50,10 +50,8 @@ public class DaoExoplanetes
 			//System.out.println(exoplanete.getPlanete());
 			listeExoplanete.add(exoplanete);
 		}
-
 		
 		return listeExoplanete;
-
 	}
 	
 	public void ajouterExoplanetes(Exoplanete exoplanete)
@@ -64,7 +62,6 @@ public class DaoExoplanetes
 	public void supprimerExoplanetes(Exoplanete exoplanete)
 	{
 		Transaction transaction = session.beginTransaction();
-		int id = exoplanete.getId();
 		session.delete(exoplanete);
 		transaction.commit();
 	}

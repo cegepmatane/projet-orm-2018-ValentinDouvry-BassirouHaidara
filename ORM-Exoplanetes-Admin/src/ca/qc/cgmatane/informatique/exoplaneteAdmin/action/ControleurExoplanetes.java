@@ -47,9 +47,12 @@ public class ControleurExoplanetes {
 		
 	}
 	
-	public void enregistrerExoplanete(Exoplanete exoplanete)
-	{
+	public void enregistrerExoplanete()
+	{	
+		Exoplanete exoplanete;
+		exoplanete = vueExoplanetes.ajouterExoplanete();
 		daoExoplanetes.ajouterExoplanetes(exoplanete);
+		//System.out.println(exoplanete.getPlanete());
 	}
 
 	public void modifierExoplanete(Exoplanete exoplanete)

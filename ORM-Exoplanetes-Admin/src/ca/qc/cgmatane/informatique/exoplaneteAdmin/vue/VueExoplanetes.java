@@ -115,13 +115,13 @@ public class VueExoplanetes extends Application
 		enregister = new Button("Enregistrer");
 		GridPane.setConstraints(enregister, 2, 2, 1, 1,HPos.CENTER, VPos.BOTTOM, null, null);
 		gridPane.getChildren().add(enregister);
-		/*enregister.setOnAction(new EventHandler<ActionEvent>()
+		enregister.setOnAction(new EventHandler<ActionEvent>()
 		{
 			public void handle(ActionEvent event)
 			{
-				controleurExoplanetes.enregistrerExoplanete(exoplanete);;
+				controleurExoplanetes.enregistrerExoplanete();
 			}
-		});*/
+		});
 
 		 labelPlanete = new Label("Planete");
 		 labelEtoile = new Label("Etoile");
@@ -138,21 +138,21 @@ public class VueExoplanetes extends Application
 		 typeTextField = new TextField();
 		 masseTextField = new TextField();
 		 fluxTextField = new TextField();
-		temperatureTextField = new TextField();
+		 temperatureTextField = new TextField();
 		 periodeTextField = new TextField();
-		distanceTextField = new TextField();
+		 distanceTextField = new TextField();
 		 zoneTextField = new TextField();
-		decouverteTextField = new TextField();
+		 decouverteTextField = new TextField();
 
 
-		gridPane.setPadding(new Insets(15,15,15,15));
-		gridPane.setVgap(5);
-		gridPane.setHgap(5);
+		 gridPane.setPadding(new Insets(15,15,15,15));
+		 gridPane.setVgap(5);
+		 gridPane.setHgap(5);
 
-		gridPane.setConstraints(planeTextField,0,0);
-		gridPane.getChildren().add(planeTextField);
-		gridPane.setConstraints(labelPlanete,1,0);
-		gridPane.getChildren().add(labelPlanete);
+		 gridPane.setConstraints(planeTextField,0,0);
+		 gridPane.getChildren().add(planeTextField);
+		 gridPane.setConstraints(labelPlanete,1,0);
+		 gridPane.getChildren().add(labelPlanete);
 
 		 gridPane.setConstraints(etoileTextField,0,1);
 		 gridPane.getChildren().add(etoileTextField);
@@ -256,9 +256,11 @@ public class VueExoplanetes extends Application
 
 
 	}
-	public void ajouterExoplanete()
+	public Exoplanete ajouterExoplanete()
 	{
-
+		Exoplanete exoplanete = new Exoplanete();
+		exoplanete.setPlanete(planeTextField.getText());
+		return exoplanete;
 	}
 
 	public void afficherFenetreAjouter()
