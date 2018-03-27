@@ -33,14 +33,14 @@ public class VueExoplanetes extends Application
 		//stringTest = "Hello word";
 
 		this.racine = new StackPane();
-		 ongleTabPane = new TabPane();
-		 ongletListeExoplanete = new Tab("ListeExoplanete");
-		 ongletMarquePage = new Tab("MarquePage");
-		 ongletRecherche = new Tab("Recherche");
-		 ongleTabPane.getTabs().add(ongletListeExoplanete);
-		 ongleTabPane.getTabs().add(ongletMarquePage);
-		 ongleTabPane.getTabs().add(ongletRecherche);
-		 racine.getChildren().add(ongleTabPane);
+		ongleTabPane = new TabPane();
+		ongletListeExoplanete = new Tab("ListeExoplanete");
+		ongletMarquePage = new Tab("MarquePage");
+		ongletRecherche = new Tab("Recherche");
+		ongleTabPane.getTabs().add(ongletListeExoplanete);
+		ongleTabPane.getTabs().add(ongletMarquePage);
+		ongleTabPane.getTabs().add(ongletRecherche);
+		racine.getChildren().add(ongleTabPane);
 		 
 		texteExoplanetes = new Text();
 		texteExoplanetes.setText(stringTest);
