@@ -7,3 +7,6 @@ ORM-Exoplanetes-Admin/src/hibernate.properties
 >>>>>>> 6fdc4aeaaf9997c18a83f3a919a83ae310b96955
 ORM-Exoplanetes/src/hibernate.properties
 ORM-Exoplanetes/src/hibernate.properties
+ORM-Exoplanetes-Admin/hs_err_pid3876.log
+ORM-Exoplanetes-Admin/src/ca/qc/cgmatane/informatique/exoplaneteAdmin/dao/DaoExoplanetes.java
+ORM-Exoplanetes-Admin/src/ca/qc/cgmatane/informatique/exoplaneteAdmin/vue/VueExoplanetes.java
