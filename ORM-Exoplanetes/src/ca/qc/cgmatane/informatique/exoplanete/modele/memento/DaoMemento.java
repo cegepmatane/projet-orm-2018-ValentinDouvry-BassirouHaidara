@@ -1,11 +1,9 @@
-package ca.qc.cgmatane.informatique.exoplanete.dao;
+package ca.qc.cgmatane.informatique.exoplanete.modele.memento;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
-import ca.qc.cgmatane.informatique.exoplanete.modele.MementoExoplanete;
 
 public class DaoMemento
 {

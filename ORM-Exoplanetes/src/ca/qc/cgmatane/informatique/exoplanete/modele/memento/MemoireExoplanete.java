@@ -1,9 +1,7 @@
-package ca.qc.cgmatane.informatique.exoplanete.modele;
+package ca.qc.cgmatane.informatique.exoplanete.modele.memento;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
-
-import ca.qc.cgmatane.informatique.exoplanete.dao.DaoMemento;
 
 public class MemoireExoplanete
 {

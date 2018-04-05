@@ -1,6 +1,6 @@
-package ca.qc.cgmatane.informatique.exoplanete.modele;
+package ca.qc.cgmatane.informatique.exoplanete.modele.memento;
 
-
+import ca.qc.cgmatane.informatique.exoplanete.modele.Exoplanete;
 
 public class MementoExoplanete
 {
