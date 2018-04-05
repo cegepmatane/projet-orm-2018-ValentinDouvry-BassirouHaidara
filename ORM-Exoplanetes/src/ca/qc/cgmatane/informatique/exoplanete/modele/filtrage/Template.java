@@ -8,10 +8,14 @@ import ca.qc.cgmatane.informatique.exoplanete.modele.Exoplanete;
 
 public abstract class Template {
 
-		TreeMap<String, Exoplanete> arbreExoplanete;
-		List<Exoplanete> listeHabitable;
-		List<Exoplanete> listeAtteignable;
-		List<Exoplanete> listeAnalysable;
+		protected TreeMap<String, Exoplanete> arbreExoplanete;
+		protected List<Exoplanete> listeHabitable;
+		protected	List<Exoplanete> listeAtteignable;
+		protected	List<Exoplanete> listeAnalysable;
+		protected abstract void trierHabitable();
+		protected abstract void trierAtteignable();
+		protected abstract void trierAnalysable();
+
 
 		public Template(TreeMap<String, Exoplanete> arbreExoplanete)
 		{
@@ -22,7 +26,23 @@ public abstract class Template {
 		}
 		public void effectuerTriallage()
 		{
+			trierAnalysable();
+			trierAtteignable();
+			trierAnalysable();
+		}
 
+		public List<Exoplanete> getListeHabitable() {
+			return listeHabitable;
+		}
+
+		public List<Exoplanete> getListeAtteignable() {
+			return listeAtteignable;
+		}
+
+
+		public List<Exoplanete> getListeAnalysable()
+		{
+			return listeAnalysable;
 		}
 
 
